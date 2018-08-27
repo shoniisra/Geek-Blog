@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  .container
+      h1 
+      
+      form(action="/users", method="POST")
+          .form-group
+            label Usuario
+            input.form-control(type="text", name="user", id="user", placeholder="Ingrese su usuario")
+          .form-group
+            label Contraseña
+            input.form-control(type="password", name="password", id="password", placeholder="Ingrese sus contraseña")        
+          .form-group
+            button.btn.btn-default(type="submit", id="sbmSend", title="Enviar") Ingresar
+
+
+          //-   .form-group
+          //-   label Nombre
+          //-   input.form-control(type="text", name="txtName", id="txtName", placeholder="Ingrese su Nombre")
+          //- .form-group
+          //-   label Apellidos
+          //-   input.form-control(type="text", name="txtLastName", id="txtLastName", placeholder="Ingrese sus Apellidos")
+          //- .form-group
+          //-   label Email
+          //-   input.form-control(type="email", name="txtEmail", id="txtEmail", placeholder="Ingrese su Correo Electrónico")
+          //- .form-group
+          //-   label DNI
+          //-   input.form-control(type="tel", name="txtDni", id="txtDni", placeholder="Ingrese su número de DNI")

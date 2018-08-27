@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    .container
+
+        form(method='post', action='/new_post')
+            h1 
+            .form-group
+                label Titulo
+                input.form-control(type='text', name='titulo', placeholder='Ingrese su Titulo')
+            .form-group
+                label Mensaje
+                textarea.form-control(type='text', name='contenido', placeholder='Ingrese su Contenido...' style="height:200px")
+            button.btn.btn-primary(type='submit') Guardar

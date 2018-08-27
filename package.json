@@ -1,0 +1,20 @@
+{
+  "name": "1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "*",
+    "express": "^4.16.2",
+    "jade": "*",
+    "mysql": "^2.16.0",
+    "nodemailer": "*",
+    "ejs": "^1.0.0",
+    "express-myconnection": "1.0.4"
+  }
+}
