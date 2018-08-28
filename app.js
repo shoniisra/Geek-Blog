@@ -7,8 +7,22 @@ const nodemailer = require('nodemailer');
 var express = require('express');
 var mysql = require('mysql');
 var connect = require('./db_connection');
-var consult = require('./db_consult');
 var app = express();
+
+
+
+var DB = require('./modules/database');
+var Database = new DB();
+
+//Database.saveSingleData(["diego","uribe","diesgo@utribe","calle","diegi"]);
+
+Database.getSingleData(1,function(res){
+   console.log(res.user_name);
+});
+
+
+
+
 
 // verbs http =>get,post,put,patch,options,header,delete
 

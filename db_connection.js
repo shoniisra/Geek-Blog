@@ -1,8 +1,7 @@
 exports.dbconection=(sql)=>{
 	
     var mysql = require('mysql');
-    var ans=0;
-    
+        
 	var con = mysql.createConnection({
 	  host: "localhost",
 	  user: "root",
