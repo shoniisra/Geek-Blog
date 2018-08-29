@@ -2,8 +2,8 @@
 var DB = require('./modules/database');
 var Database = new DB();
 
-Database.saveSingleData(["diego","uribe","diego@uribe","calle","diegi"]);
+//Database.saveSingleData(["diego","uribe","diesgo@utribe","calle","diegi"]);
 
-Database.getSingleData(1,function(res){
-   console.log(res.nombre);
+Database.getSingleData(["diego"],function(res){
+   console.log(res.user_name);
 });

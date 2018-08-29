@@ -10,6 +10,7 @@ exports.dbconection=(sql)=>{
 	});
 	var consulta=(err, result)=>{
 		  	if (err) throw err;	 
+		  	db.end();
 		  	 console.log(result.insertId)		  	 
 	}
 	con.connect((err)=>{

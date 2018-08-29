@@ -3,17 +3,17 @@ extends layout
 block content
       .jumbotron
         .container
-          h1.display-3 GEEK BLOG
+
+          h1.display-3 GEEK BLOG #{entradas[0].idpost}
           i Lo mejor en el mundo de la tecnología
             table
               tr
                 td 
-                  h2 Llegó el Samsung Galaxy Note 9
-                  h6 agosto 26, 2018
+                  h2 #{entradas[0].post_title}
+                  h6 #{entradas[0].post_date}
                   h6
                     p.
-                      Este viernes ha salido a la venta en España el nuevo modelo de la marca surcoreana.
-                      El grupo surcoreano Samsung Electronics ha lanzado al mercado en España su nuevo teléfono Galaxy Note 9. En total, el nuevo dispositivo llega a 56 países, entre ellos Estados Unidos, China y toda Europa. 
+                      #{entradas[0].post_info}
                 td
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/rjaL94yEJME?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             p
@@ -22,38 +22,87 @@ block content
         // Example row of columns
         .row
           .col-md-4
-            h2 Galaxy Watch, más que un reloj inteligente
-            h6 agosto 24, 2018
+        h2 #{entradas[1].idpost}
+            h2 #{entradas[1].post_title}
+            h6 #{entradas[1].post_date}
             table
               tr
                 td
                   p.
-                    Samsung Electronics México anuncia la llegada del nuevo Galaxy Watch, el cual estará disponible a partir del mes de octubre.                  
+                    #{entradas[1].post_info}                  
                 td
                     img(src= "https://easysmartech.com/wp-content/uploads/2018/07/Galacy-Watch-portada.jpg" height="100px" width="100px")
             p
               a.btn.btn-secondary(href='/n1', role='button') Ver más »
+        .row
           .col-md-4
-            h2 Android Pie, el nuevo OS de Google
-            h6 agosto 21, 2018
+        h2 #{entradas[2].idpost}
+            h2 #{entradas[2].post_title}
+            h6 #{entradas[2].post_date}
             table
               tr
                 td
                   p.
-                    Por fin conocemos el nombre del nuevo sistema operativo de Android. Fiel a su tradición de nombrar el sistema según un postre y en orden alfabético, el nuevo OS es el Android Pie.                
-                td
+                    #{entradas[2].post_info}
+        td
                     img(src= "http://imagenes.milenio.com/DUptuOWrBE8Z9LGMD2jfJg-8-34=/958x596/http://www.milenio.com/uploads/media/2018/08/06/android-pie-llegara-proximas-semanas.jpg" height="100px" width="100px")
             p
               a.btn.btn-secondary(href='/n2', role='button') Ver más »
+        .row
           .col-md-4
-            h2 Asi es como se fabrica el huawei P20
-            h6 agosto 21, 2018
+            h2 #{entradas[3].idpost}
+            h2 #{entradas[3].post_title}
+            h6 #{entradas[3].post_date}
             table
               tr
                 td
                   p.
-                    La línea de fabricación de la serie Huawei P20 se lleva a cabo en las instalaciones que la empresa tiene en Songshan Lake donde hacen el equipo desde la materia prima hasta el producto terminado.                 
+                    #{entradas[3].post_info}
+        td
+                    img(src= "https://consumer-img.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p20-pro-update1/img/kv/kv-mobile-original.jpg" height="100px" width="100px")
+            p
+              a.btn.btn-secondary(href='/n3', role='button') Ver más »
+        br
+        br
+        .row
+          .col-md-4
+            h2 #{entradas[4].idpost}
+            h2 #{entradas[4].post_title}
+            h6 #{entradas[4].post_date}
+            table
+              tr
                 td
+                  p.
+                    #{entradas[4].post_info}                  
+                td
+                    img(src= "https://easysmartech.com/wp-content/uploads/2018/07/Galacy-Watch-portada.jpg" height="100px" width="100px")
+            p
+              a.btn.btn-secondary(href='/n1', role='button') Ver más »
+        .row
+          .col-md-4
+            h2 #{entradas[5].idpost}
+            h2 #{entradas[5].post_title}
+            h6 #{entradas[5].post_date}
+            table
+              tr
+                td
+                  p.
+                    #{entradas[5].post_info} 
+        td
+                    img(src= "http://imagenes.milenio.com/DUptuOWrBE8Z9LGMD2jfJg-8-34=/958x596/http://www.milenio.com/uploads/media/2018/08/06/android-pie-llegara-proximas-semanas.jpg" height="100px" width="100px")
+            p
+              a.btn.btn-secondary(href='/n2', role='button') Ver más »
+        .row
+          .col-md-4
+            h2 #{entradas[6].idpost}
+            h2 #{entradas[6].post_title}
+            h6 #{entradas[6].post_date}
+            table
+              tr
+                td
+                  p.
+                    #{entradas[6].post_info}
+          td
                     img(src= "https://consumer-img.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p20-pro-update1/img/kv/kv-mobile-original.jpg" height="100px" width="100px")
             p
               a.btn.btn-secondary(href='/n3', role='button') Ver más »

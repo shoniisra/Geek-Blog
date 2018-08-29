@@ -21,14 +21,17 @@ html(lang='en')
           li.nav-item
             a.nav-link(href='/contact') Contact
         ul(class="nav navbar-nav navbar-right")
-          li.nav-item
-            button.btn.btn-secondary.btn-sm(type="button" height="5px")
-              a.nav-link.active(href='/create') New POST
+          if (1 != null)
+            li.nav-item
+              a.btn.btn-secondary.btn-sm(type="button" height="5px" href='/create') New POST
+          //- else
+          //-   script.
+          //-     alert("hola")
           li.nav-item
             a.nav-link.disabled(href='/register') Register
           li.nav-item
             a.nav-link.disabled(href='/login') Login
-          
+
     main(role='main')
       br
       br
